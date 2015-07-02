@@ -16,7 +16,8 @@ SOURCES += main.cpp\
         mainwindow.cpp \
     satconfigsys.cpp \
     passworddialog.cpp \
-    editdialog.cpp
+    editdialog.cpp \
+    main.cpp
 
 HEADERS  += mainwindow.h \
     satconfigsys.h \
