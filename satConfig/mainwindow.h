@@ -16,6 +16,7 @@ public:
     ~MainWindow();
 
 private:
+    void showPasswordDialog();
     Ui::MainWindow *ui;
 };
 
