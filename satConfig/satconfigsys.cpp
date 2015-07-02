@@ -65,10 +65,10 @@ void SatConfigSys::importSatConfig(QString filepath)
         param_item_list.append(new QStandardItem(param_list.at(GROUPS_FILE_INDEX)));
         param_item_list.append(new QStandardItem(param_list.at(NAME_FILE_INDEX)));
         param_item_list.append(new QStandardItem(param_list.at(VALUE_FILE_INDEX)));
-        //Intentionally skipped column 3, don't need type unit
-        param_item_list.append(new QStandardItem());
+        param_item_list.append(new QStandardItem()); //new value
         param_item_list.append(new QStandardItem(param_list.at(TYPE_FILE_INDEX)));
         param_item_list.append(new QStandardItem(param_list.at(NOTE_FILE_INDEX)));
+        param_item_list.append(new QStandardItem(param_list.at(TYPE_UNIT_FILE_INDEX)));
 
         //Disable editing in all field except for "New Value" column
         for(int i = 0; i < param_item_list.count(); i++)
