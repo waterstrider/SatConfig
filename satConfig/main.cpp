@@ -8,8 +8,8 @@ int main(int argc, char *argv[])
 //    MainWindow w;
 //    w.show();
     SatConfigSys satConfigSys;
-    satConfigSys.readSatConfigFile("conf_sat.txt");
-    satConfigSys.importSatConfig(sat_config_path);
+//    satConfigSys.readSatConfigFile("conf_sat.txt");
+    satConfigSys.importSatConfig(SAT_CONFIG_PATH);
 
 //    return a.exec();
 }
