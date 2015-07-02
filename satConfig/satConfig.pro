@@ -14,12 +14,15 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    satconfigsys.cpp
+    satconfigsys.cpp \
+    passworddialog.cpp
 
 HEADERS  += mainwindow.h \
     satconfigsys.h \
-    globalcontext.h
+    globalcontext.h \
+    passworddialog.h
 
-FORMS    += mainwindow.ui
+FORMS    += mainwindow.ui \
+    passworddialog.ui
 
 OTHER_FILES += conf_sat.txt
