@@ -83,6 +83,32 @@ void SatConfigSys::importSatConfig(QString filepath)
     }
 }
 
+void SatConfigSys::exportSatConfig(QString filepath){
+    /* Try and open a file for output */
+//    QString outputFilename = filepath;
+//    QFile outputFile(outputFilename);
+//    outputFile.open(QIODevice::WriteOnly);
+
+    /* Check it opened OK */
+//    if(!outputFile.isOpen()){
+//        qDebug() << argv[0] << "- Error, unable to open" << outputFilename << "for output";
+//        return 1;
+//    }
+
+    /* Point a QTextStream object at the file */
+//    QTextStream outStream(&outputFile);
+
+    for (int i = 0 ; i < satConfigModel.rowCount() ; i++) {
+        QString status = QString("%1%2%3%4%5%6").arg(satConfigModel.item(i,0)->text(),-GROUP_LENGTH,' ').arg(satConfigModel.item(i,1)->text(),-PARAM_NAME_LENGTH,' ').arg(satConfigModel.item(i,2)->text(),-TYPE_LENGTH,' ').arg(satConfigModel.item(i,3)->text(),-TYPE_UNIT_LENGTH,' ').arg(satConfigModel.item(i,4)->text(),-PARAM_VALUE_LENGTH,' ').arg(satConfigModel.item(i,5)->text(),-NOTE_LENGTH,' ');
+        qDebug() << status;
+        /* Write the line to the file */
+//        outStream << status;
+    }
+
+    /* Close the file */
+//    outputFile.close();
+}
+
 SatConfigSys::~SatConfigSys()
 {
 

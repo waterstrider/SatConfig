@@ -30,6 +30,14 @@ static const unsigned int TYPE_UNIT_START_INDEX = 79;
 static const unsigned int PARAM_VALUE_START_INDEX = 90;
 static const unsigned int NOTE_START_INDEX = 111;
 
+//Starting length of each column in conf_sat.txt
+static const unsigned int GROUP_LENGTH = 21;
+static const unsigned int PARAM_NAME_LENGTH = 62- 21;
+static const unsigned int TYPE_LENGTH =79- 62;
+static const unsigned int TYPE_UNIT_LENGTH =90- 79;
+static const unsigned int PARAM_VALUE_LENGTH =111- 90;
+static const unsigned int NOTE_LENGTH = 0;
+
 static const QString SAT_CONFIG_PATH = "conf_sat.txt";
 
 static const QString SCC_STR = "SCC";
