@@ -1,7 +1,8 @@
 #ifndef SATCONFIGSYS_H
 #define SATCONFIGSYS_H
 #include <QStandardItemModel>
-
+#include <QFile>
+#include <QTextStream>
 class SatConfigSys
 {
 public:
