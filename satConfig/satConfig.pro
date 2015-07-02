@@ -13,8 +13,10 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    satconfigsys.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    satconfigsys.h
 
 FORMS    += mainwindow.ui
