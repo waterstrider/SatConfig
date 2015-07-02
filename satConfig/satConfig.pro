@@ -20,3 +20,5 @@ HEADERS  += mainwindow.h \
     satconfigsys.h
 
 FORMS    += mainwindow.ui
+
+OTHER_FILES += conf_sat.txt
