@@ -10,6 +10,7 @@ int main(int argc, char *argv[])
     SatConfigSys satConfigSys;
 //    satConfigSys.readSatConfigFile("conf_sat.txt");
     satConfigSys.importSatConfig(SAT_CONFIG_PATH);
+    satConfigSys.exportSatConfig(SAT_CONFIG_PATH);
 
 //    return a.exec();
 }

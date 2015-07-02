@@ -7,6 +7,7 @@
 #include <QTextStream>
 //#include <QMessageBox>
 #include <QList>
+#include <QDebug>
 #include "globalcontext.h"
 #include <QMessageBox>
 
@@ -21,8 +22,9 @@ public:
     QSortFilterProxyModel *mpc_aocs_proxyModel;
     QSortFilterProxyModel *fds_proxyModel;
     void initProxyModels();
-    bool readSatConfigFile(QString filename = "");
+//    bool readSatConfigFile(QString filename = "");
     void importSatConfig(QString filepath);
+    void exportSatConfig(QString filepath);
 };
 
 #endif // SATCONFIGSYS_H
