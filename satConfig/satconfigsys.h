@@ -3,7 +3,7 @@
 #include <QStandardItemModel>
 #include <QFile>
 #include <QTextStream>
-#include <QMessageBox>
+//#include <QMessageBox>
 #include <QList>
 class SatConfigSys
 {
