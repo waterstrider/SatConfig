@@ -79,7 +79,7 @@ void SatConfigSys::importSatConfig(QString filepath)
             }
         }
 
-        data_model->appendRow(param_item_list);
+        satConfigModel.appendRow(param_item_list);
     }
 }
 

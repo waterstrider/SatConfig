@@ -8,6 +8,7 @@
 //#include <QMessageBox>
 #include <QList>
 #include "globalcontext.h"
+#include <QMessageBox>
 
 class SatConfigSys
 {
