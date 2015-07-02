@@ -17,7 +17,8 @@ SOURCES += main.cpp\
     satconfigsys.cpp
 
 HEADERS  += mainwindow.h \
-    satconfigsys.h
+    satconfigsys.h \
+    globalcontext.h
 
 FORMS    += mainwindow.ui
 

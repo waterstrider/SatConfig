@@ -26,6 +26,25 @@ bool SatConfigSys::readSatConfigFile(QString filename){
     file.close();
     return 1;
 }
+
+void SatConfigSys::initProxyModels()
+{
+    scc_proxyModel = new QSortFilterProxyModel();
+    mpc_pl_proxyModel = new QSortFilterProxyModel();
+    mpc_aocs_proxyModel = new QSortFilterProxyModel();
+    fds_proxyModel = new QSortFilterProxyModel();
+
+    scc_proxyModel->setSourceModel(&satConfigModel);
+    mpc_pl_proxyModel->setSourceModel(&satConfigModel);
+    mpc_aocs_proxyModel->setSourceModel(&satConfigModel);
+    fds_proxyModel->setSourceModel(&satConfigModel);
+
+    scc_proxyModel->setFilterFixedString("SCC");
+    mpc_pl_proxyModel->setFilterFixedString("MPC_PL");
+    mpc_aocs_proxyModel->setFilterFixedString("MPC_AOCS");
+    fds_proxyModel->setFilterFixedString("FDS");
+}
+
 SatConfigSys::~SatConfigSys()
 {
 
