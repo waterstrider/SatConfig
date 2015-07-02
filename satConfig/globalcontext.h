@@ -22,12 +22,12 @@ static const unsigned int VALUE_FILE_INDEX = 4;
 static const unsigned int NOTE_FILE_INDEX = 5;
 
 //Starting position of each column in conf_sat.txt
-static const unsigned int group_start_index = 0;
-static const unsigned int param_name_start_index = 21;
-static const unsigned int type_start_index = 62;
-static const unsigned int type_unit_start_index = 79;
-static const unsigned int param_value_start_index = 90;
-static const unsigned int note_start_index = 111;
+static const unsigned int GROUP_START_INDEX = 0;
+static const unsigned int PARAM_NAME_START_INDEX = 21;
+static const unsigned int TYPE_START_INDEX = 62;
+static const unsigned int TYPE_UNIT_START_INDEX = 79;
+static const unsigned int PARAM_VALUE_START_INDEX = 90;
+static const unsigned int NOTE_START_INDEX = 111;
 
 static const QString SAT_CONFIG_PATH = "conf_sat.txt";
 
