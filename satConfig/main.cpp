@@ -11,6 +11,9 @@ int main(int argc, char *argv[])
 //    satConfigSys.readSatConfigFile("conf_sat.txt");
     satConfigSys.importSatConfig(SAT_CONFIG_PATH);
     satConfigSys.exportSatConfig(SAT_CONFIG_PATH);
+    satConfigSys.exportI_CMOB_yyyyMMdd_HHMMSS(SAT_CONFIG_PATH);
+    satConfigSys.exportI_CNFF_yyyyMMdd_HHMMSS(SAT_CONFIG_PATH);
+    satConfigSys.exportI_CNFM_yyyyMMdd_HHMMSS(SAT_CONFIG_PATH);
 
 //    return a.exec();
 }

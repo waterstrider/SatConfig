@@ -130,14 +130,14 @@ void SatConfigSys::exportI_CNFM_yyyyMMdd_HHMMSS(QString filepath){
     /* Point a QTextStream object at the file */
 //    QTextStream outStream(&outputFile);
 
-    for (int i = 0 ; i < mpc_pl_proxyModel.rowCount() ; i++) {
+    for (int i = 0 ; i < mpc_pl_proxyModel->rowCount() ; i++) {
         QString status = QString("%1%2%3%4%5%6")
-                .arg(mpc_pl_proxyModel.item(i,0)->text(),-GROUP_LENGTH,' ')
-                .arg(mpc_pl_proxyModel.item(i,1)->text(),-PARAM_NAME_LENGTH,' ')
-                .arg(mpc_pl_proxyModel.item(i,2)->text(),-TYPE_LENGTH,' ')
-                .arg(mpc_pl_proxyModel.item(i,3)->text(),-TYPE_UNIT_LENGTH,' ')
-                .arg(mpc_pl_proxyModel.item(i,4)->text(),-PARAM_VALUE_LENGTH,' ')
-                .arg(mpc_pl_proxyModel.item(i,5)->text(),-NOTE_LENGTH,' ');
+                .arg(mpc_pl_proxyModel->index(i,0).data().toString(),-GROUP_LENGTH,' ')
+                .arg(mpc_pl_proxyModel->index(i,1).data().toString(),-PARAM_NAME_LENGTH,' ')
+                .arg(mpc_pl_proxyModel->index(i,2).data().toString(),-TYPE_LENGTH,' ')
+                .arg(mpc_pl_proxyModel->index(i,3).data().toString(),-TYPE_UNIT_LENGTH,' ')
+                .arg(mpc_pl_proxyModel->index(i,4).data().toString(),-PARAM_VALUE_LENGTH,' ')
+                .arg(mpc_pl_proxyModel->index(i,5).data().toString(),-NOTE_LENGTH,' ');
         qDebug() << status;
         /* Write the line to the file */
 //        outStream << status;
@@ -162,14 +162,14 @@ void SatConfigSys::exportI_CMOB_yyyyMMdd_HHMMSS(QString filepath){
     /* Point a QTextStream object at the file */
 //    QTextStream outStream(&outputFile);
 
-    for (int i = 0 ; i < mpc_aocs_proxyModel.rowCount() ; i++) {
+    for (int i = 0 ; i < mpc_aocs_proxyModel->rowCount() ; i++) {
         QString status = QString("%1%2%3%4%5%6")
-                .arg(mpc_aocs_proxyModel.item(i,0)->text(),-GROUP_LENGTH,' ')
-                .arg(mpc_aocs_proxyModel.item(i,1)->text(),-PARAM_NAME_LENGTH,' ')
-                .arg(mpc_aocs_proxyModel.item(i,2)->text(),-TYPE_LENGTH,' ')
-                .arg(mpc_aocs_proxyModel.item(i,3)->text(),-TYPE_UNIT_LENGTH,' ')
-                .arg(mpc_aocs_proxyModel.item(i,4)->text(),-PARAM_VALUE_LENGTH,' ')
-                .arg(mpc_aocs_proxyModel.item(i,5)->text(),-NOTE_LENGTH,' ');
+                .arg(mpc_aocs_proxyModel->index(i,0).data().toString(),-GROUP_LENGTH,' ')
+                .arg(mpc_aocs_proxyModel->index(i,1).data().toString(),-PARAM_NAME_LENGTH,' ')
+                .arg(mpc_aocs_proxyModel->index(i,2).data().toString(),-TYPE_LENGTH,' ')
+                .arg(mpc_aocs_proxyModel->index(i,3).data().toString(),-TYPE_UNIT_LENGTH,' ')
+                .arg(mpc_aocs_proxyModel->index(i,4).data().toString(),-PARAM_VALUE_LENGTH,' ')
+                .arg(mpc_aocs_proxyModel->index(i,5).data().toString(),-NOTE_LENGTH,' ');
         qDebug() << status;
         /* Write the line to the file */
 //        outStream << status;
@@ -194,14 +194,14 @@ void SatConfigSys::exportI_CNFF_yyyyMMdd_HHMMSS(QString filepath){
     /* Point a QTextStream object at the file */
 //    QTextStream outStream(&outputFile);
 
-    for (int i = 0 ; i < fds_proxyModel.rowCount() ; i++) {
+    for (int i = 0 ; i < fds_proxyModel->rowCount() ; i++) {
         QString status = QString("%1%2%3%4%5%6")
-                .arg(fds_proxyModel.item(i,0)->text(),-GROUP_LENGTH,' ')
-                .arg(fds_proxyModel.item(i,1)->text(),-PARAM_NAME_LENGTH,' ')
-                .arg(fds_proxyModel.item(i,2)->text(),-TYPE_LENGTH,' ')
-                .arg(fds_proxyModel.item(i,3)->text(),-TYPE_UNIT_LENGTH,' ')
-                .arg(fds_proxyModel.item(i,4)->text(),-PARAM_VALUE_LENGTH,' ')
-                .arg(fds_proxyModel.item(i,5)->text(),-NOTE_LENGTH,' ');
+                .arg(fds_proxyModel->index(i,0).data().toString(),-GROUP_LENGTH,' ')
+                .arg(fds_proxyModel->index(i,1).data().toString(),-PARAM_NAME_LENGTH,' ')
+                .arg(fds_proxyModel->index(i,2).data().toString(),-TYPE_LENGTH,' ')
+                .arg(fds_proxyModel->index(i,3).data().toString(),-TYPE_UNIT_LENGTH,' ')
+                .arg(fds_proxyModel->index(i,4).data().toString(),-PARAM_VALUE_LENGTH,' ')
+                .arg(fds_proxyModel->index(i,5).data().toString(),-NOTE_LENGTH,' ');
         qDebug() << status;
         /* Write the line to the file */
 //        outStream << status;

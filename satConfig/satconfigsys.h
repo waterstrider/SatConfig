@@ -25,6 +25,9 @@ public:
 //    bool readSatConfigFile(QString filename = "");
     void importSatConfig(QString filepath);
     void exportSatConfig(QString filepath);
+        void exportI_CNFM_yyyyMMdd_HHMMSS(QString filepath);
+            void exportI_CMOB_yyyyMMdd_HHMMSS(QString filepath);
+                void exportI_CNFF_yyyyMMdd_HHMMSS(QString filepath);
 };
 
 #endif // SATCONFIGSYS_H
