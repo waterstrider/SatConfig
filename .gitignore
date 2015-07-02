@@ -1,0 +1,5 @@
+*.o
+*.o
+*.Release
+*.Debug
+*.Release
